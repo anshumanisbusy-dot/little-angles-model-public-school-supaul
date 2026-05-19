@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Angels Model Public School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #222;
+      overflow-x: hidden;
+    }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('school.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero {
+      animation: fadeIn 2s ease;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 15px;
+      text-shadow: 0 0 20px rgba(255,255,255,0.3);
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.7;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 30px;
+      background: #ffcc00;
+      color: black;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+      background: white;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 50px;
+      color: #003366;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .about-text h2 {
+      color: #004aad;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .about-text p {
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    .stats {
+      background: #003366;
+      color: white;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .stat-box {
+      padding: 40px 20px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .stat-box:hover {
+      transform: translateY(-10px);
+      background: rgba(255,255,255,0.15);
+    }
+
+    .stat-box h2 {
+      font-size: 3rem;
+      color: #ffcc00;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 20px;
+      transition: 0.4s;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #001d3d;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="hero">
+      <img src="https://i.ibb.co/hRT2cCq4/Chat-GPT-Image-May-19-2026-06-59-10-PM.png" alt="School Logo" style="width:220px; height:220px; object-fit:cover; border-radius:50%; margin-bottom:20px; border:5px solid white; box-shadow:0 0 30px rgba(255,255,255,0.5); background:white; padding:5px;">
+      <h1>Little Angels Model Public School</h1>
+      <p>
+        20 Years of Excellence in Education ✨<br>
+        An English Medium School that takes your child to the top of the sky.
+      </p>
+      <a href="#about" class="btn">Explore Our School</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h1 class="section-title">About Our School</h1>
+
+    <div class="about">
+      <img src="https://i.ibb.co/Jj859DXw/Chat-GPT-Image-May-19-2026-07-07-14-PM.png" alt="School Celebration">
+
+      <div class="about-text">
+        <h2>Where Dreams Begin</h2>
+        <p>
+          Welcome to <b>Little Angels Model Public School</b>, a trusted name in quality education for over <b>20 years</b>. 
+          Our mission is to inspire young minds, build strong character, and create future leaders.
+          
+          With more than <b>1000+ students</b> and <b>50+ active staff members</b>, we proudly provide a safe, modern, and inspiring learning environment.
+          
+          We believe every child is special and deserves the opportunity to shine bright like the stars.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat-box">
+      <h2>20+</h2>
+      <p>Years of Excellence</p>
+    </div>
+
+    <div class="stat-box">
+      <h2>1000+</h2>
+      <p>Students</p>
+    </div>
+
+    <div class="stat-box">
+      <h2>50+</h2>
+      <p>Active Staff</p>
+    </div>
+
+    <div class="stat-box">
+      <h2>English</h2>
+      <p>Medium School</p>
+    </div>
+  </section>
+
+  <section>
+    <h1 class="section-title">School Gallery</h1>
+
+    <div class="gallery">
+      <img src="https://i.ibb.co/Df7yjzSw/project-made-by-student.jpg" alt="School Photo 1">
+      <img src="https://i.ibb.co/Z6w7YhYy/summer-party.jpg" alt="School Photo 2">
+      <img src="https://i.ibb.co/DHWKnzsj/day-shift-party.jpg" alt="School Photo 3">
+      <img src="https://i.ibb.co/Z6YCwCVf/summer-party-2.jpg" alt="School Photo 4">
+      <img src="https://i.ibb.co/Jj859DXw/Chat-GPT-Image-May-19-2026-07-07-14-PM.png" alt="School Celebration Photo">
+    </div>
+  </section>
+
+  <section>
+    <h1 class="section-title">Our Vision</h1>
+
+    <div class="about-text" style="text-align:center; max-width:900px; margin:auto;">
+      <p>
+        “Education is not just learning facts, it is preparing children for a brighter future.”
+        <br><br>
+        At Little Angels Model Public School, we help children grow with confidence, discipline, creativity, and leadership.
+        
+        <br><br>
+        <b>We don’t just teach students — we build future stars.</b>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Little Angels Model Public School | Made with ❤️ by Kumar Anshuman</p>
+  </footer>
+
+</body>
+</html>
